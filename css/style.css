@@ -1,0 +1,120 @@
+.wrapper{
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.between{
+    justify-content: space-between;
+}
+.center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+*{
+    font-family: sans-serif;
+	box-sizing: border-box;
+}
+input{
+    text-align: center;
+    height: 40px;
+    width: 120px;
+}
+.img-fluid{
+    max-width: 100%;
+}
+.compass.text-center {
+	display: block;
+	margin: auto;
+	width: 475px !important;
+	height: 475px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+}
+.mt-5{
+    margin-top: 20px;
+}
+.lob-line{
+	position: absolute;
+	width: 70%;
+	height: 1px;
+	border-top: 2px dashed red;
+	left: 86%;
+	transform-origin: 0% 0%;
+	transform: translateX(-50%) rotate(-90deg);
+	transition: 0.5s;
+}
+input{
+    border: 1px solid black;
+}
+.compass.text-center.position-relative {
+	border-radius: 50%;
+}
+.min-line, .max-line {
+	position: absolute;
+	width: 35%;
+	height: 2px;
+	background-color: rgb(16, 8, 96);
+	left: 68.2%;
+	transform-origin: 0% 0%;
+	transform: translateX(-50%) rotate(-90deg);
+	transition: 0.5s;
+}
+
+/* .shade{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+} */
+
+.triangle {
+    width: 0;
+    height: 0;
+    border: 150px solid transparent;
+    border-top: 0 !important;
+    border-bottom: 300px solid blue !important;
+	display: none;
+  }
+  .triangle {
+	position: absolute;
+	top: 50%;
+	left: 50.5%;
+	transform: translateX(-50%);
+	border-bottom: 300px solid blue;
+	opacity: 0.2 !important;
+	transform-origin: 50% 0%;
+	/* transition: 0.5s; */
+	/* height: 100px; */
+}
+
+
+
+
+@media screen and (max-width: 767px){
+	.compass.text-center.position-relative {
+		/* transform: scale(0.5); */
+		width: auto !important;
+	}
+	.lob-line {
+		position: absolute;
+		width: 50%;
+		height: 1px;
+		border-top: 2px dashed red;
+		left: 75.5%;
+		transform-origin: 0% 0%;
+		transform: translateX(-50%) rotate(-90deg);
+		transition: 0.5s;
+	}
+}
